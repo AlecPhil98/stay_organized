@@ -17,23 +17,37 @@
     <form id="addTodoForm">
         <div>
             <div>
-                <select name="userNames" id="userNames">Usernames</select>
+                <label for="userNames">Usernames</label>
+                <select name="userNames" id="userNames" required>Usernames</select>
             </div>
             <div>
-                <select name="pickCategory" id="pickCategory">Pick Category</select>
+                <label for="pickCategory">Pick Category</label>
+                <select name="pickCategory" id="pickCategory" required>Pick Category</select>
             </div>
             <div>
-                <select name="taskPriority" id="taskPriority">Task Priority
+                <label for="taskPriority">Task Priority</label>
+                <select name="taskPriority" id="taskPriority" required>Task Priority
                     <option value="">Select Priority</option>
                     <option value="low">Low</option>
                     <option value="medium">Medium</option>
                     <option value="high">High</option>
                 </select>
-                
+
             </div>
         </div>
-        <button>Add Todo Button</button>
+        <div>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+        </div>
+        <div>
+            <label for="deadline">Deadline:</label>
+            <input type="text" id="deadline" name="deadline" placeholder="YYYY-MM-DD" required>
+        </div>
+        <button type="submit">Add ToDo</button>
     </form>
+
+
+
 
 
 
