@@ -40,19 +40,49 @@
         </div>
     </nav>
 
-
     <h1>New Todo Page -Alec </h1>
+    <form id="addTodoForm">
+        <div>
+            <div>
+                <label for="userNames">Usernames</label>
+                <select name="userid" id="userNames" required>Usernames</select>
+            </div>
+            <div>
+                <label for="pickCategory">Pick Category</label>
+                <select name="category" id="pickCategory" required>Pick Category</select>
+            </div>
+            <div>
+                <label for="taskPriority">Task Priority</label>
+                <select name="priority" id="taskPriority" required>Task Priority
+                    <option value="">Select Priority</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
 
-    <div>
+            </div>
+        </div>
+        <div>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+        </div>
+        <div>
+            <label for="deadline">Deadline:</label>
+            <input type="text" id="deadline" name="deadline" placeholder="YYYY-MM-DD" required>
+        </div>
+        <button type="submit">Add ToDo</button>
+    </form>
 
 
 
-    </div>
+
+
+<<<<<<< HEAD
+=======
 
 
 
-
-
+>>>>>>> main
     <!-- link to js file for new_todo -->
     <script src="scripts/new_todo.js"></script>
     <!-- link to bootstrap  -->
