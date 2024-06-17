@@ -13,21 +13,49 @@
 
 <body>
 
-<h1>New Todo Page -Alec </h1>
+    <h1>New Todo Page -Alec </h1>
+    <form id="addTodoForm">
+        <div>
+            <div>
+                <label for="userNames">Usernames</label>
+                <select name="userNames" id="userNames" required>Usernames</select>
+            </div>
+            <div>
+                <label for="pickCategory">Pick Category</label>
+                <select name="pickCategory" id="pickCategory" required>Pick Category</select>
+            </div>
+            <div>
+                <label for="taskPriority">Task Priority</label>
+                <select name="taskPriority" id="taskPriority" required>Task Priority
+                    <option value="">Select Priority</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
 
-<div>
+            </div>
+        </div>
+        <div>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+        </div>
+        <div>
+            <label for="deadline">Deadline:</label>
+            <input type="text" id="deadline" name="deadline" placeholder="YYYY-MM-DD" required>
+        </div>
+        <button type="submit">Add ToDo</button>
+    </form>
 
 
-    
-</div>
 
 
 
 
 
-<!-- link to js file for new_todo -->
+
+    <!-- link to js file for new_todo -->
     <script src="scripts/new_todo.js"></script>
-<!-- link to bootstrap  -->
+    <!-- link to bootstrap  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
