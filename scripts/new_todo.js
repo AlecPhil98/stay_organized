@@ -57,7 +57,7 @@ let pickCategoryDropdown = async () => {
         let categoryData = await response.json()
         for (let i = 0; i < categoryData.length; i++) {
             let categoryOption = document.createElement("option")
-            categoryOption.value = categoryData[i].id
+            categoryOption.value = categoryData[i].name
             categoryOption.textContent = categoryData[i].name
             pickCategory.appendChild(categoryOption)
         }
