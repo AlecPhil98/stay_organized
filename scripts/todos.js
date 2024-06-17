@@ -43,16 +43,26 @@ let usersTask = async (event) => {
   }
     
   try {
-    let response = await fetch("http://localhost:8083/api/todos/" + userId);
+    let response = await fetch("http://localhost:8083/api/todos/byuser/" + userId);
     let userTasks = await response.json();
     // creating a row and cell for selected user's data
-    let newRow = userTableBodyInfo.insertRow()
-    let newCell1 = newRow.insertCell()
-    newCell1.innerHTML =  userTasks.description
-    let newCell2 = newRow.insertCell()
-    newCell2.innerHTML =  userTasks.deadline
-    let newCell3 = newRow.insertCell()
-    newCell3.innerHTML =  `<a href='./todo_details.html?id=${userId}'>See Details</a>`
+    if(userTasks.length === 0){
+      let newRow = userTableBodyInfo.insertRow()
+      let newCell1 = newRow.insertCell()
+      newCell1.innerHTML =  'No tasks'
+      let newCell2 = newRow.insertCell()
+      newCell2.innerHTML =  'No deadline'
+    }
+    for(let i = 0;i<userTasks.length;i++){
+
+      let newRow = userTableBodyInfo.insertRow()
+      let newCell1 = newRow.insertCell()
+      newCell1.innerHTML =  userTasks[i].description
+      let newCell2 = newRow.insertCell()
+      newCell2.innerHTML =  userTasks[i].deadline
+      let newCell3 = newRow.insertCell()
+      newCell3.innerHTML =  `<a href='./todo_details.html?id=${userId}'>See Details</a>`
+    }
     
   } catch (error) {
     console.log("oops", error);
