@@ -17,13 +17,19 @@
     <form id="addTodoForm">
         <div>
             <div>
-                <select name="userNames" id="userNames">Uernames</select>
+                <select name="userNames" id="userNames">Usernames</select>
             </div>
             <div>
                 <select name="pickCategory" id="pickCategory">Pick Category</select>
             </div>
             <div>
-                <select name="taskPriority" id="taskPriority">Task Priority</select>
+                <select name="taskPriority" id="taskPriority">Task Priority
+                    <option value="">Select Priority</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                
             </div>
         </div>
         <button>Add Todo Button</button>
