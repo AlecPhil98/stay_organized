@@ -1,11 +1,14 @@
 .navbar {
 background-color: rgb(183, 237, 183);
 height: 80px;
+font-family: 'Times New Roman', Times, serif;
+font-size: large;
 }
 
 .navbar-brand {
     color: black;
     font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .container-fluid {
@@ -38,3 +41,15 @@ height: fit-content;
     text-align: center;
 }
 
+h1 {
+
+font-family: 'Times New Roman', Times, serif;
+
+}
+
+.btn {
+
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+
+}
