@@ -1,5 +1,5 @@
 .navbar {
-background-color: rgb(183, 237, 183);
+background-color: rgb(183, 237, 235);
 height: 80px;
 font-family: 'Times New Roman', Times, serif;
 font-size: large;
@@ -42,14 +42,29 @@ height: fit-content;
 }
 
 h1 {
-
 font-family: 'Times New Roman', Times, serif;
-
 }
 
 .btn {
-
     font-size: large;
     font-family: 'Times New Roman', Times, serif;
+}
 
+.card {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    border: none;
+}
+
+.row {
+    padding-left: 100px;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 20px;
+}
+
+.card-text {
+font-size: medium;
 }
