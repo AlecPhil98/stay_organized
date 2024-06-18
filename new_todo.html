@@ -36,53 +36,45 @@
                         <a class="nav-link" href="todo_details.html">To Do Details</a>
                     </li>
                 </ul>
+                <a class="btn btn-outline-dark btn-sm" href="new_todo.html" role="button">Get Started</a>
             </div>
         </div>
     </nav>
 
-    <h1>New Todo Page -Alec </h1>
-    <form id="addTodoForm">
-        <div>
-            <div>
-                <label for="userNames">Usernames</label>
+    <h1 style="text-align: center; padding-top: 30px;">Add Todo</h1>
+    <section class="container-fluid">
+        <form id="addTodoForm" class="row g-3">
+            <div class="col-md-6">
+                <label for="userNames" style="font-size: large;">Usernames</label>
                 <select name="userid" id="userNames" required>Usernames</select>
             </div>
-            <div>
-                <label for="pickCategory">Pick Category</label>
+            <div class="col-md-6">
+                <label for="pickCategory" style="font-size: large;">Pick Category</label>
                 <select name="category" id="pickCategory" required>Pick Category</select>
             </div>
-            <div>
-                <label for="taskPriority">Task Priority</label>
+            <div class="col-md-6">
+                <label for="taskPriority" style="font-size: large;">Task Priority</label>
                 <select name="priority" id="taskPriority" required>Task Priority
                     <option value="">Select Priority</option>
                     <option value="low">Low</option>
                     <option value="medium">Medium</option>
                     <option value="high">High</option>
                 </select>
-
             </div>
-        </div>
-        <div>
-            <label for="description">Description:</label>
-            <textarea id="description" name="description" required></textarea>
-        </div>
-        <div>
-            <label for="deadline">Deadline:</label>
-            <input type="text" id="deadline" name="deadline" placeholder="YYYY-MM-DD" required>
-        </div>
-        <button type="submit">Add ToDo</button>
-    </form>
+            <div class="col-md-6">
+                <label for="deadline" style="font-size: large;">Deadline:</label>
+                <input type="text" id="deadline" name="deadline" placeholder="YYYY-MM-DD" required>
+            </div>
+            <div class="col-md-6">
+                <label for="description" style="padding-left: 14%; font-size: large;">Description:</label>
+                <textarea id="description" class="form-control" rows="5" name="description" required></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-outline-dark">Add ToDo</button>
+            </div>
+        </form>
+    </section>
 
-
-
-
-
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> main
     <!-- link to js file for new_todo -->
     <script src="scripts/new_todo.js"></script>
     <!-- link to bootstrap  -->

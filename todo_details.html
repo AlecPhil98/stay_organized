@@ -12,7 +12,7 @@
 
 <body>
     <!-- Navigation Bar-->
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">TaskTastic</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -34,12 +34,13 @@
                         <a class="nav-link" href="todo_details.html">To Do Details</a>
                     </li>
                 </ul>
+                <a class="btn btn-outline-dark btn-sm" href="new_todo.html" role="button">Get Started</a>
             </div>
         </div>
     </nav>
 
     <!-- created a table to display the selected user's details -->
-    <table id="userTable">
+    <table id="userTable" class="table table-striped-columns table-hover">
         <thead>
             <tr>
                 <th>Category</th>
@@ -54,8 +55,8 @@
     <!-- created a form for buttons -->
     <form id="userDataForm">
 
-        <button id="completedTaskButton">MARK COMPLETED</button>
-        <button id="resetTaskButton">MARK UNCOMPLETED</button>
+        <button id="completedTaskButton" class="btn btn-outline-dark">MARK COMPLETED</button>
+        <button id="resetTaskButton" class="btn btn-outline-dark">MARK UNCOMPLETED</button>
     </form>
     <script src="./scripts/todo_details.js"></script>
     <!-- link to bootstrap  -->
