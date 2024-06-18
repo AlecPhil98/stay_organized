@@ -1,0 +1,40 @@
+.navbar {
+background-color: rgb(183, 237, 183);
+height: 80px;
+}
+
+.navbar-brand {
+    color: black;
+    font-size: 30px;
+}
+
+.container-fluid {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#userNames {
+font-size: large;
+}
+
+#pickCategory {
+font-size: large;
+}
+
+#taskPriority {
+    font-size: large;
+}
+
+#deadline {
+    font-size: large;
+}
+
+.form-control {
+margin-left: 50%;
+height: fit-content;
+}
+
+#userDataForm {
+    text-align: center;
+}
+
